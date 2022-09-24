@@ -4,18 +4,17 @@ html {
     color: grey;
 }
 h2 {
-    color: black;
+    color: #0f6ba0;
 }
 
 header {
     color: white;
     text-align: center;
-    background-color: darkblue;
+    background-color: #0f6ba0;
     padding: 10px 0;
 }
 
 #contact {
-    display: block;
     border: #5f707946;
     padding: 0 10px 10px 10px;
     border-top: double 5px;
@@ -26,8 +25,11 @@ header {
 
 #newsletter {
     padding: 0 10px 10px 10px;
-    display: block;
     border: none;
+}
+
+#newsletter label {
+    margin-bottom: 8px;
 }
 
 section {
@@ -37,16 +39,19 @@ section {
 #contact input {
     height: 4em;
     width: 100%;
-    display: block;
     padding: 10px;
-    margin: 5px;
+    margin: 10px 0 10px 0;
     border: none;
+    background-color: #d5cbcb79;
 }
 
-#newsletter input {
-    display: block;
-    padding: 20px;
-    margin: 5px;
+label {
+    padding: auto;
+    margin-bottom: 8px;
+}
+
+label .light {
+    display: inline;
 }
 
 input:focus {
@@ -65,25 +70,33 @@ textarea {
 
 input::placeholder {
     text-align: right;
+    font-style: italic;
 }
 
 select {
     width: 100%;
+    height: 4em;
     padding: 10px;
     border: none;
     margin: 5px 5px 15px 5px;
     border-radius: 4px;
-    background-color: #f1f1f1;
+    background-color: #d5cbcb79;
   }
 
   button {
     width: 100%;
     border-radius: 5px;
-    background-color: #39a8e8;
+    background-color: #0f6ba0;
     border: none;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+  }
+
+  footer {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
   }
