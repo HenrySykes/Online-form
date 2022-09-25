@@ -3,7 +3,9 @@ html {
     font-size: 16px;
     color: grey;
 }
-h2 {
+legend {
+    margin: 10px 0 10px 0;
+    font-size: 1.5em;
     color: #0f6ba0;
 }
 
@@ -23,6 +25,10 @@ header {
     border-right: none;
 }
 
+#contact div{
+    display: flex;
+    flex-direction: column;
+}
 #newsletter {
     padding: 0 10px 10px 10px;
     border: none;
@@ -33,6 +39,10 @@ header {
 #newsletter div {
     display: flex;
     margin-bottom: 1em;
+}
+
+#newsletter div:first-child {
+    margin-bottom: 0;
 }
 
 .prompt {
@@ -53,8 +63,14 @@ section {
     background-color: #d5cbcb79;
 }
 
-input:focus {
-    border: 5px solid #39a8e8;
+#contact input:focus {
+    background-color: antiquewhite;
+    color: #0f6ba0;
+}
+
+textarea:focus {
+    background-color: antiquewhite;
+    color: #0f6ba0;
 }
 
 textarea {
