@@ -70,6 +70,7 @@ textarea {
 input::placeholder {
     text-align: right;
     font-style: italic;
+    color: #8a8b8b;
 }
 
 select {
