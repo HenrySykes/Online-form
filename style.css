@@ -55,7 +55,6 @@ section {
 
 #contact input {
     height: 4em;
-    width: 100%;
     padding: 10px;
     margin: 10px 0 10px 0;
     border: none;
@@ -66,6 +65,10 @@ section {
 #contact input:focus {
     background-color: antiquewhite;
     color: #0f6ba0;
+}
+
+#contact div:last-child {
+    width: 50%;
 }
 
 textarea:focus {
@@ -115,4 +118,10 @@ select {
     font-size: small;
     font-style: italic;
     text-align: center;
+  }
+
+  @media only screen and (min-width: 768px) {
+
+  
+    
   }
