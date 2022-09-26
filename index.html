@@ -3,6 +3,8 @@
 
  <head>
 
+    <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="style.css">
@@ -30,25 +32,28 @@
 
     <main>
 
-        <section>
+        <section class="top">
             <h2>Sign up for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </section>
 
         <form>
 
+            <hr class="top-line">
+            <hr class="mid-line">
+
          <fieldset id="contact">
 
-            <div><legend>Contact Information</legend></div>
+            <legend>Contact Information</legend>
             
             <div class="form1">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user-name" placeholder="Required">
+            <input type="text" id="name" name="user-name" placeholder="Required" required>
             </div>
 
             <div class="form1">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="user-email" placeholder="Required">
+            <input type="email" id="email" name="user-email" placeholder="Required" required>
             </div>
 
             <div class="form1">
@@ -91,55 +96,59 @@
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="user-zip">
             </div>
-            
-         </fieldset>
-
-         <br>
-
-         <fieldset id="newsletter">
-
-                <div><legend>Newsletter</legend></div>
-
-                <div>
-                <label class="prompt">Select the newsletters you would like to receive:</label><br>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="html" value="html-code" name="html-news">
-                    <label class="light" for="html">HTML News</label><br>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="css" value="css-code" name="css-news">
-                    <label class="light" for="css">CSS News</label><br>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="javascript" value="javascript-code" name="javascript-news">
-                    <label class="light" for="javascript">Javascript News</label><br>
-                </div>
-                    
-                <div>
-                <label class="prompt">Newsletter format</label><br>
-                </div>
-
-                <div>
-                <input type="radio" id="html" name="html">
-                <label for="html">HTML</label>
-                </div>
-
-                <div>
-                <input type="radio" id="plain-text" name="plain-text">
-                <label for="plain-text">Plain text</label>
-                <br>
-                </div>
-
-                <label class="prompt" for="other-topics">Other topics you would like to hear about</label>
-                <textarea name="topics" id="other-topics"></textarea>
-
-                <button type="submit">Sign Up</button>
 
          </fieldset>
+
+         <hr class="btm-line">
+
+         <section class="bottom">
+
+            <fieldset id="newsletter">
+
+                    <legend id="nws">Newsletter</legend>
+
+                    <div>
+                    <label class="prompt">Select the newsletters you would like to receive:</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="html" value="html-code" name="html-news">
+                        <label class="light" for="html">HTML News</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="css" value="css-code" name="css-news">
+                        <label class="light" for="css">CSS News</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="javascript" value="javascript-code" name="javascript-news">
+                        <label class="light" for="javascript">Javascript News</label><br>
+                    </div>
+                        
+                    <div>
+                    <label class="prompt">Newsletter format</label><br>
+                    </div>
+
+                    <div>
+                    <input type="radio" id="html-format" name="html">
+                    <label for="html">HTML</label>
+                    </div>
+
+                    <div>
+                    <input type="radio" id="plain-text" name="plain-text-format">
+                    <label for="plain-text">Plain text</label>
+                    <br>
+                    </div>
+
+                    <label class="prompt" for="other-topics">Other topics you would like to hear about</label>
+                    <textarea name="topics" id="other-topics"></textarea>
+
+                    <button type="submit">Sign Up</button>
+
+            </fieldset>
+
+         </section>
 
         </form>
 
