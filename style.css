@@ -3,10 +3,20 @@ html {
     font-size: 16px;
     color: grey;
 }
+
+h1, h2 {
+    font-family: 'Prompt', sans-serif;
+}
+
 legend {
     margin: 10px 0 10px 0;
     font-size: 1.5em;
     color: #0f6ba0;
+    font-family: 'Prompt', sans-serif;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
 }
 
 header {
@@ -14,6 +24,10 @@ header {
     text-align: center;
     background-color: #0f6ba0;
     padding: 10px 0;
+}
+
+label {
+    font-family: 'PT Sans', sans-serif;
 }
 
 #contact {
@@ -29,6 +43,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 #newsletter {
     padding: 0 10px 10px 10px;
     border: none;
@@ -90,6 +105,7 @@ input::placeholder {
     text-align: right;
     font-style: italic;
     color: #8a8b8b;
+    font-family: 'PT Sans', sans-serif;
 }
 
 select {
@@ -112,12 +128,14 @@ select {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    font-family: 'Prompt', sans-serif;
   }
 
   footer {
     font-size: small;
     font-style: italic;
     text-align: center;
+    font-family: 'Prompt', sans-serif;
   }
 
   @media only screen and (min-width: 768px) {
